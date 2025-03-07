@@ -1,0 +1,40 @@
+version: 0.0.1
+type: plugin
+author: vleity
+name: text2file
+label:
+  en_US: text2file
+  ja_JP: text2file
+  zh_Hans: text2file
+  pt_BR: text2file
+description:
+  en_US: convert text to file
+  ja_JP: convert text to file
+  zh_Hans: convert text to file
+  pt_BR: convert text to file
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/text2file.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-07T07:08:15.035930475Z
+privacy: PRIVACY.md
+verified: false

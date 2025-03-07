@@ -1,0 +1,17 @@
+identity:
+  author: vleity
+  name: text2file
+  label:
+    en_US: text2file
+    zh_Hans: text2file
+    pt_BR: text2file
+  description:
+    en_US: convert text to file
+    zh_Hans: convert text to file
+    pt_BR: convert text to file
+  icon: icon.svg
+tools:
+  - tools/text2html/text2html.yaml
+extra:
+  python:
+    source: provider/text2file.py

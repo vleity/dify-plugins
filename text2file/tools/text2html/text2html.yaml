@@ -1,0 +1,43 @@
+identity:
+  name: text2html
+  author: vleity
+  label:
+    en_US: text2html
+    zh_Hans: text2html
+    pt_BR: text2html
+description:
+  human:
+    en_US: convert text to html
+    zh_Hans: convert text to html
+    pt_BR: convert text to html
+  llm: convert text to html
+parameters:
+  - name: text
+    type: string
+    required: true
+    label:
+      en_US: Text string
+      zh_Hans: Text string
+      pt_BR: Text string
+    human_description:
+      en_US: convert text to html
+      zh_Hans: convert text to html
+      pt_BR: convert text to html
+    llm_description: convert text to html
+    form: llm
+  - name: filename
+    type: string
+    required: true
+    label:
+      en_US: File Name string
+      zh_Hans: File Name string
+      pt_BR: File Name string
+    human_description:
+      en_US: convert text to html
+      zh_Hans: convert text to html
+      pt_BR: convert text to html
+    llm_description: convert text to html
+    form: llm
+extra:
+  python:
+    source: tools/text2html/text2html.py
